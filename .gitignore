@@ -1,0 +1,10 @@
+data/
+*.csv
+~$*.xlsx
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+anaconda_projects/
+INTERVIEW_STORYTELLING.md
