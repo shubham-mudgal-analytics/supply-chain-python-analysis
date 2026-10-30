@@ -20,7 +20,7 @@ An analysis of 180,519 order lines from the DataCo SMART Supply Chain dataset. I
 
 | Question | Answer | Evidence |
 |---|---|---|
-| 1. Delivery promise | **No for First Class.** Every delivered First Class order arrived exactly 1 day after the scheduled date. Average real time is 2.00 days against 1 scheduled day. | Chart 1, delay table (Findings, Q1) |
+| 1. Delivery promise | **No for First Class.** Every delivered First Class order took exactly 1 day longer than the scheduled time. Average real time is 2.00 days against 1 scheduled day. | Chart 1, delay table (Findings, Q1) |
 | 2. Discounts | **No meaningful difference.** Loss share is 18.73% for discounted orders and 18.38% for non-discounted orders. Discount alone does not explain loss in this data. | Chart 2 (Findings, Q2) |
 | 3. Customer segment | **Consumer** has the largest total sales (about 19.10 million) and the highest average profit per order (22.18). The gap in profit per order is small. | Chart 3 (Findings, Q3) |
 
@@ -81,9 +81,9 @@ Personal and location columns were removed before analysis. The raw data is not 
 | Raw file loaded (`latin-1` encoding) | 180,519 | 53 | Encoding needed to read the file |
 | Privacy and unused columns removed | 180,519 | 43 | 10 columns removed (see Privacy) |
 | Duplicate check on Order Item Id | 180,519 | 43 | 0 duplicates, nothing removed |
-| Date columns converted to datetime | 180,519 | 43 | `order date` and `shipping date` added |
-| Delay column added | 180,519 | 43 | `delay_days` added |
-| Delivered orders used for delay analysis | 172,765 | 43 | 7,754 canceled orders excluded from delay analysis |
+| Date columns converted to datetime | 180,519 | 45 | `order date` and `shipping date` added |
+| Delay column added | 180,519 | 46 | `delay_days` added |
+| Delivered orders used for delay analysis | 172,765 | 46 | 7,754 canceled orders excluded from delay analysis |
 
 ---
 
