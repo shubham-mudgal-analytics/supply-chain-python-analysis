@@ -20,7 +20,7 @@ An analysis of 180,519 order lines from the DataCo SMART Supply Chain dataset. I
 
 | Question | Answer | Evidence |
 |---|---|---|
-| 1. Delivery promise | **No for First Class.** Every delivered First Class order took exactly 1 day longer than the scheduled time. Average real time is 2.00 days against 1 scheduled day. | Chart 1, delay table (Findings, Q1) |
+| 1. Delivery promise | **No for First Class.** Every delivered First Class order took exactly 1 day longer than the scheduled time. Average real time is 2.0 days against 1.0 scheduled day for delivered orders. | Chart 1, delay table, Step 21 (Findings, Q1) |
 | 2. Discounts | **No meaningful difference.** Loss share is 18.73% for discounted orders and 18.38% for non-discounted orders. Discount alone does not explain loss in this data. | Chart 2 (Findings, Q2) |
 | 3. Customer segment | **Consumer** has the largest total sales (about 19.10 million) and the highest average profit per order (22.18). The gap in profit per order is small. | Chart 3 (Findings, Q3) |
 
@@ -115,7 +115,7 @@ Delivered orders only (172,765).
 - **Same Day:** delay is 0 or 1 day.
 - **Standard Class:** delay ranges from -2 to 2 days, with similar counts for each value. The average is close to 0, but this hides a mix of early and late orders.
 
-Across all orders, First Class has 1.0 scheduled days and 2.00 real days on average.
+For delivered First Class orders (26,513), the average scheduled time is 1.0 day and the average real time is 2.0 days (Step 21).
 
 ![Late delivery rate by shipping mode](images/chart1_late_rate_by_mode.png)
 
